@@ -1,0 +1,160 @@
+
+.card-spring{
+    background-color:#32452f;
+}
+.spring:hover{
+    background-color:#1e291c;
+}
+.card-spring h5{
+    font-size: 55px;
+}
+
+.card-coffee h1{
+   font-size: 60px;
+}
+.card-coffee{
+    background-color:#32452f; 
+}
+
+.list-unstyled li {
+    margin-bottom: 20px; 
+  }
+
+  .list-unstyled a {
+    text-decoration: none; 
+    color: rgb(109, 99, 99);
+  }
+
+  .list-unstyled a:hover {
+    color: #000000;
+  }
+  .classname a:hover {
+    text-decoration: underline; /* Mouse gelince altı çizilsin */
+}
+.icon-link ul {
+    list-style-type: none; /* Noktaları kaldırır */
+   
+}
+.icon-link li {
+    display: inline-block;
+    margin-right: 10px; 
+    
+}
+h5{
+    margin-bottom: 30px;
+}
+ul li a {
+    color: #000;
+    
+    
+}
+.icon-link ul {
+    list-style-type: none;
+    padding: 0 ; 
+}
+
+.icon-link a {
+    display: inline-block;
+    transition: background-color 0.3s ease; /* Geçiş efekti */
+    padding: 5px; 
+}
+
+.icon-link a:hover {
+    background-color: #dbd3d3b9; 
+    border-radius: 30px; 
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color:  #0c6c4c; 
+}
+.card-misha{
+    background-color: #d1d1ab;
+    color: #3e4728 !important;
+}
+.misha{
+    color: #3e4728 !important;
+    border-color: #3e4728;
+}
+.misha:hover{
+    background-color: #9b9b7a !important;
+}
+.coffee:hover{
+    background-color: #1a2419;
+}  
+
+  .staff:hover {
+    background-color: #055a3f !important; 
+    color: rgba(255, 255, 255, 0.8); 
+  }
+  .card-staff{
+    background-color: #016243 !important;
+  }
+  
+  
+
+ 
+  
+
+
+
+/* CSS for the accordion effect */
+details {
+    margin-bottom: 10px;
+    border: none;
+   
+}
+
+summary {
+    font-weight: bold;
+    padding: 10px;
+    cursor: pointer;
+
+    list-style: none;
+
+    position: relative; 
+}
+
+summary::after {
+    content: '\2228';
+    float: right;
+    margin-left: 10px;
+    transition: transform 0.3s ease; 
+  }
+  
+  details[open] summary::after {
+    transform: rotate(180deg);
+  }
+
+details>ul {
+    padding: 10px;
+    background-color: #fff;
+    transition: max-height 0.3s ease;
+    max-height: 0;
+    overflow: hidden;
+}
+
+details[open] > ul {
+    max-height: 500px;
+    
+}
+
+
+@media (max-width: 748px) {
+    .d-block.d-sm-none {
+        display: block !important;
+    }
+
+    .d-none.d-sm-block {
+        display: none !important;
+    }
+}
+
+@media (min-width: 748px) {
+    .d-block.d-sm-none {
+        display: none !important;
+    }
+
+    .d-none.d-sm-block {
+        display: block !important;
+    }
+}

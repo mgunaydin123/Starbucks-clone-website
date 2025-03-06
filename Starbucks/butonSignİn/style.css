@@ -1,0 +1,110 @@
+.list-unstyled li {
+    margin-bottom: 20px; 
+  }
+
+  .list-unstyled a {
+    text-decoration: none; 
+    color: rgb(109, 99, 99);
+  }
+
+  .list-unstyled a:hover {
+    color: #000000;
+  }
+  .classname a:hover {
+    text-decoration: underline; /* Mouse gelince altı çizilsin */
+}
+.icon-link ul {
+    list-style-type: none; /* Noktaları kaldırır */
+   
+}
+.icon-link li {
+    display: inline-block;
+    margin-right: 10px; 
+    
+}
+.icon-link a {
+    display: inline-block;
+    transition: background-color 0.3s ease; /* Geçiş efekti */
+    padding: 5px; 
+}
+.icon-link a:hover {
+    background-color: #d6c9c9b9; 
+    border-radius: 30px; 
+}
+ul li a {
+    color: #000;
+    
+    
+}
+.butonhover:hover{
+    background-color: rgb(209, 214, 209);
+}
+
+
+/* CSS for the accordion effect */
+details {
+    margin-bottom: 10px;
+    border: none;
+   
+}
+
+summary {
+    font-weight: bold;
+    padding: 10px;
+    cursor: pointer;
+
+    list-style: none;
+
+    position: relative; 
+}
+
+summary::after {
+    content: '\2228';
+    float: right;
+    margin-left: 10px;
+    transition: transform 0.3s ease; 
+  }
+  
+  details[open] summary::after {
+    transform: rotate(180deg);
+  }
+
+details>ul {
+    padding: 10px;
+    background-color: #fff;
+    transition: max-height 0.3s ease;
+    max-height: 0;
+    overflow: hidden;
+}
+
+details[open] > ul {
+    max-height: 500px;
+    
+}
+@media (max-width: 748px) {
+    .d-block.d-sm-none {
+        display: block !important;
+    }
+
+    .d-none.d-sm-block {
+        display: none !important;
+    }
+}
+
+@media (min-width: 748px) {
+    .d-block.d-sm-none {
+        display: none !important;
+    }
+
+    .d-none.d-sm-block {
+        display: block !important;
+    }
+}
+.card{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.form-check{
+    padding-left: 200px;
+    padding-right: 80px;
+}

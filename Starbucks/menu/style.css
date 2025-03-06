@@ -1,0 +1,145 @@
+/* CSS for the accordion effect */
+details {
+    margin-bottom: 10px;
+    border: none;
+   
+}
+
+summary {
+    font-weight: bold;
+    padding: 10px;
+    cursor: pointer;
+  
+    background-color: #f0f0f0;
+
+    list-style: none;
+    
+    position: relative; 
+}
+
+summary::after {
+    content: '\22BE'; 
+    float: right;
+    margin-left: 10px;
+    transition: transform 0.3s ease; 
+  }
+  
+  details[open] summary::after {
+    transform: rotate(180deg);
+  }
+
+details>ul {
+    padding: 10px;
+    background-color: #fff;
+    transition: max-height 0.3s ease;
+    max-height: 0;
+    overflow: hidden;
+}
+
+details[open] > ul {
+    max-height: 500px;
+    
+}
+
+
+@media (max-width: 748px) {
+    .d-block.d-sm-none {
+        display: block !important;
+    }
+
+    .d-none.d-sm-block {
+        display: none !important;
+    }
+}
+
+@media (min-width: 748px) {
+    .d-block.d-sm-none {
+        display: none !important;
+    }
+
+    .d-none.d-sm-block {
+        display: block !important;
+    }
+}
+
+
+.list-unstyled li {
+    margin-bottom: 20px; 
+  }
+
+  .list-unstyled a {
+    text-decoration: none; 
+    color: rgb(109, 99, 99);
+  }
+
+  .list-unstyled a:hover {
+    color: #000000;
+  }
+  .classname a:hover {
+    text-decoration: underline; /* Mouse gelince altı çizilsin */
+}
+
+.icon-link ul {
+    list-style-type: none; /* Noktaları kaldırır */
+   
+}
+.icon-link li {
+    display: inline-block; /* Elemanları yan yana hizalar */
+    margin-right: 10px; /* Elemanlar arasında boşluk bırakır */
+    
+}
+h5{
+    margin-bottom: 30px;
+}
+ul li a {
+    color: #000;
+    
+    
+}
+.icon-link ul {
+    list-style-type: none;
+    padding: 0 ; 
+}
+
+.icon-link a {
+    display: inline-block;
+    transition: background-color 0.3s ease; /* Geçiş efekti */
+    padding: 5px; 
+}
+
+.icon-link a:hover {
+    background-color: #dbd3d3b9; /* Yarı saydam gri arka plan */
+    border-radius: 30px; 
+}
+#local:hover{
+    color: #0c6c4c;
+}
+.navbar-nav .nav-item .nav-link:hover {
+    color:  #0c6c4c; 
+}
+
+
+  
+  .btn-transparent:hover {
+    background-color: #0c6c4c; /* Hafif beyaz bir arka plan */
+    color: rgba(255, 255, 255, 0.8); /* Metin rengi için biraz şeffaflık */
+  }
+
+  .bg-green{
+    background-color: #1e3932;
+  }
+  .bi-bag{
+    margin-left: 500px;
+  }
+
+ 
+   .flex-container {
+        display: flex;
+        flex-direction: column; /* Elemanları dikey hizala */
+        align-items: flex-start; /* Sola hizala */
+    }
+
+    .flex-container i {
+        align-self: flex-end; /* İkonu sağa hizala */
+        margin-top: 10px; /* İkon ile metin arasında biraz boşluk bırak */
+    }
